@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif, auto;
+}
+
+p,
+a {
+  font-size: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+article h1 {
+  color: goldenrod;
+}
+
+a,
+.bio p,
+h2,
+footer small {
+  color: white;
+}
+
+.article {
+  color: black;
+}
