@@ -12,9 +12,9 @@ body {
   /*outline: auto;*/
 }
 
-#wrapper{
-    width: 80%;
-    margin: auto;
+#wrapper {
+  width: 80%;
+  margin: auto;
 }
 
 header {
@@ -31,6 +31,7 @@ main {
 
 main img {
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -70,6 +71,7 @@ main {
 .bio img {
   border: 2px solid white;
   width: 60%;
+  max-width: 100%;
   height: auto;
   margin-top: 10px;
   margin-left: 10px;
@@ -126,4 +128,12 @@ nav,
 
 article {
   flex: 4;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
 }
