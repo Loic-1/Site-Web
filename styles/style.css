@@ -15,6 +15,7 @@ body {
 #wrapper {
   width: 80%;
   margin: auto;
+  z-index: 0;
 }
 
 header {
@@ -60,8 +61,19 @@ main {
   display: flex;
 }
 
+.navarticle {
+  display: flex;
+}
+
+.navarticle article p:nth-child(4) {
+  /*pas de panique, cette écriture est 
+  expliquée dans ce document*/
+  /*clear: left;*/
+}
+
 .bio {
   height: fit-content;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,5 +147,32 @@ article {
 @media only screen and (max-width: 800px) {
   body {
     background-color: lightblue;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 
+  .navarticle {
+    position: relative;
+    width: 100%;
+  }
+
+  .navarticle nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+  .navarticle article {
+    z-index: 2;
+    max-width: 100%;
+  }
+  */
+  .bio {
+    width: 70%;
   }
 }
